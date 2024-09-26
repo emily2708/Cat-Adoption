@@ -1,0 +1,76 @@
+﻿@model Cat
+
+<style>
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 0 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .card-containers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+</style>
+
+
+<h1>Meet @Model.Name</h1>
+<div class="card-containers">
+    
+    <div class="card" style="width: 23rem;">
+        <img src=@Model.url class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <p class="card-text">This cat's breed is: @Model.Breed</p>
+            <p class="card-text">Price: $@Model.price</p>
+            <a asp-route-id=@Model.id asp-controller="Cat" asp-action="SingleCat" class="btn btn-primary">Adopt Now!</a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs" id="catTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="who-tab" data-bs-toggle="tab" data-bs-target="#who" type="button" role="tab" aria-controls="who" aria-selected="true">Who Is This Cat?</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="needs-tab" data-bs-toggle="tab" data-bs-target="#needs" type="button" role="tab" aria-controls="needs" aria-selected="false">Specific Cat Needs</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="why-tab" data-bs-toggle="tab" data-bs-target="#why" type="button" role="tab" aria-controls="why" aria-selected="false">Why You Should Adopt</button>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="tab-content" id="catTabContent">
+            <div class="tab-pane fade show active" id="who" role="tabpanel" aria-labelledby="who-tab">
+                <h5 class="card-title">Meet @Model.Name</h5>
+                <p class="card-text">@Model.Name is a @Model.age-year-old cat. He is very playful</p>
+            </div>
+            <div class="tab-pane fade show" id="needs" role="tabpanel" aria-labelledby="who-tab">
+                <h5 class="card-title">@Model.Name Cat Needs</h5>
+                <p class="card-text">@Model.Name has these needs in order to be adopted</p>
+            </div>
+            <div class="tab-pane fade show" id="why" role="tabpanel" aria-labelledby="who-tab">
+                <h5 class="card-title">Why You Should Adopt @Model.Name</h5>
+                <p class="card-text">@Model.Name needs a home. Adopt Now!</p>
+            </div>
+        </div>
+
+    </div>
+</div>

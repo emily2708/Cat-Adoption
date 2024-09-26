@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{7D798D6F-CFDD-4DAF-B67F-607F7B8EAF95}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cat Adoption/Views/Cat/SingleCat.cshtml">
+    <Files>
+      <File FileName="Cat Adoption/Models/ErrorViewModel.cs" />
+      <File FileName="Cat Adoption/Models/Cat.cs" />
+      <File FileName="Cat Adoption/Models/ApplicationDbContext.cs" />
+      <File FileName="Cat Adoption/Program.cs" />
+      <File FileName="Cat Adoption/Controllers/HomeController.cs" />
+      <File FileName="Cat Adoption/Controllers/CatController.cs" />
+      <File FileName="Cat Adoption/Views/Cat/Index.cshtml" />
+      <File FileName="Cat Adoption/Views/Home/Index.cshtml" />
+      <File FileName="Cat Adoption/Views/Shared/_Layout.cshtml" />
+      <File FileName="Cat Adoption/Views/Cat/SingleCat.cshtml" Line="41" Column="5" />
+      <File FileName="Cat Adoption/Migrations/20240905002441_image.cs" />
+      <File FileName="Cat Adoption/Migrations/20240824003200_initial.cs" />
+      <File FileName="Cat Adoption/Migrations/20240905003126_newimage.cs" />
+      <File FileName="Cat Adoption/Views/Shared/_Layout.cshtml.css" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Cat Adoption" expanded="True">
+            <Node name="Cat Adoption" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Cat" expanded="True">
+                  <Node name="SingleCat.cshtml" selected="True" />
+                </Node>
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Cat_220Adoption PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
